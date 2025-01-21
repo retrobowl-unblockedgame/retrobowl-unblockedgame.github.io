@@ -1,0 +1,409 @@
+/*
+
+Custom style
+
+You can override the default class or style here
+
+This file will not be overwritten by the updater
+
+*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3b4f #1a1b2e;
+}
+
+.item-grid {
+    padding: 8px;
+}
+
+.list-game {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.list-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;  /* 1:1 比例 */
+    overflow: hidden;
+}
+
+.list-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* 遮罩层样式 */
+.list-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);  /* 添加半透明黑色背景 */
+}
+
+.info-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    font-size: 14px;
+    flex-shrink: 0;
+    order: -1;  /* 确保评分在最左侧 */
+}
+
+.list-title {
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    flex: 1;
+    text-align: left;
+    order: 1;
+    position: relative;
+}
+
+/* 添加tooltip样式 */
+.list-title:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: normal;
+    max-width: 200px;
+    z-index: 1000;
+}
+
+.star-rating i {
+    color: #ffd700;
+}
+
+.star-rating span {
+    color: #fff;
+}
+
+/* 悬停效果 */
+.list-game:hover .list-thumbnail img {
+    transform: scale(1.2);
+}
+
+.list-game:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.game-player {
+    background-color: #212234;
+    border-radius: 10px;
+    color: white
+}
+
+.game-area {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.game-iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 宽高比 */
+    overflow: hidden;
+}
+
+.game-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.game-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px
+}
+
+.game-control-btn {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.single-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px
+}
+
+.single-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.action-btn>div {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.action-btn i,.action-btn img {
+    color: white;
+    font-size: 16px
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.header-left img {
+    border-radius: 10px
+}
+
+.action-btn {
+    display: flex;
+    gap: 20px
+}
+
+.info-the-game .rating {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #9595d1
+}
+
+.info-the-game .rating i {
+    margin-right: 5px
+}
+
+.star-on {
+    color: #ffa73f;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    width: 16px;
+    display: inline-block;
+    font-size: 13.5px;
+    position: relative;
+    left: 1px;
+    top: -1px
+}
+
+.info-the-game .rating i.star-off {
+    margin-right: 5px;
+    color: #5c5b73
+}
+
+.stats-vote-1 i {
+    font-size: 20px;
+    padding: 6px;
+}
+
+.game-tabs {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+.wgt-list-thumbnail img {
+    transition: all .3s ease
+}
+
+.wgt-list-game:hover .wgt-list-thumbnail img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+
+.wgt-list-thumbnail {
+    overflow: hidden
+}
+
+.wgt-list-thumbnail {  
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+.wgt-list-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.placeholder-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0
+}
+
+.hover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top,rgba(0,0,0,0.6) 0,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0) 100%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    transform: translateY(100%);
+    transition: transform .3s ease-in-out;
+    font-weight: 700
+}
+
+/* 添加hover效果 */
+.wgt-list-game:hover .hover-info {
+    transform: translateY(0);
+}
+
+.search-box {
+    position: relative;
+    width: 300px
+}
+
+.search-box .search-bar {
+    width: 100%
+}
+
+.search-box .search-results-container {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    margin-left: 10px
+}
+
+.search-box .search-results {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #2d2e47;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #212234;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 11px
+}
+
+.search-box .search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #2d2e47;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #e0e0e0
+}
+
+.search-box .search-results li:last-child {
+    border-bottom: none
+}
+
+.search-box .search-results li:hover {
+    background-color: #2a2b40
+}
+
+.search-box .search-result-thumb {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.search-box .search-result-info {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.search-box .search-results .search-all {
+    background-color: #2a2b40;
+    font-weight: bold;
+    text-align: center;
+    color: #fff
+}
+
+.search-box .search-results .search-all:hover {
+    background-color: #333450
+}
+
+.search-box .searching-indicator {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #212234;
+    border: 1px solid #2d2e47;
+    border-radius: 10px;
+    margin-top: 11px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #e0e0e0
+}

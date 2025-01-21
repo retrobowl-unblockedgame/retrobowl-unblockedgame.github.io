@@ -1,0 +1,11 @@
+{
+    "title" : "Asteroid",
+    "slug" : "asteroid",
+    "version" : 1,
+    "last_update" : "19/01/2024",
+    "developer" : "Gimcraft",
+    "description" : "Step back in time with 'Asteroid,' a game that revives the timeless appeal of classic arcade space shooters. Embrace the nostalgia as you navigate a spaceship through a relentless barrage of asteroids, aiming for the top score in this endless challenge.",
+    "instructions" : "Hold the left side of the screen to move the ship to the left, and the right side to move it to the right. Alternatively, use the left and right arrow keys for control.",
+    "category" : "Arcade",
+    "tags" : "space, asteroid"
+}

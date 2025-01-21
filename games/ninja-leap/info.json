@@ -1,0 +1,11 @@
+{
+    "title" : "Ninja Leap",
+    "slug" : "ninja-leap",
+    "version" : 1,
+    "last_update" : "19/01/2024",
+    "developer" : "Gimcraft",
+    "description" : "Experience the thrill of the climb in 'Ninja Leap,' an endless vertical runner that tests your reflexes and speed. Take control of a swift ninja running up an endless wall, leaping back and forth to collect coins and avoid deadly obstacles.",
+    "instructions" : "Tap or click the screen to jump into other wall.",
+    "category" : "Arcade",
+    "tags" : "ninja"
+}

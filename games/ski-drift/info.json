@@ -1,0 +1,11 @@
+{
+    "title" : "Ski Drift",
+    "slug" : "ski-drift",
+    "version" : 1,
+    "last_update" : "19/01/2024",
+    "developer" : "Gimcraft",
+    "description" : "Get ready to carve the snow in 'Ski Drift', an exhilarating endless skiing experience that's all about agility and survival. Guide your character down a snowy slope at an oblique angle, drifting from side to side with just a tap of the screen. The longer you ski, the higher your score climbs – but watch out for obstacles that could end your downhill run!",
+    "instructions" : "Tap or click the screen change direction.",
+    "category" : "Arcade",
+    "tags" : "ski, sport"
+}

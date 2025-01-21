@@ -1,0 +1,11 @@
+{
+    "title" : "Hunting Frog",
+    "slug" : "hunting-frog",
+    "version" : 1,
+    "last_update" : "19/01/2024",
+    "developer" : "Gimcraft",
+    "description" : "Dive into the whimsical world of 'Hunting Frog,' an addictive, easy-to-play game that's perfect for all ages. Control a voraciously hungry frog with a twist - it's always rotating! Your task is to catch as many insects as possible while avoiding the bees that end your game.",
+    "instructions" : "Click or touch the screen to catch an insects.",
+    "category" : "Arcade",
+    "tags" : "frog"
+}

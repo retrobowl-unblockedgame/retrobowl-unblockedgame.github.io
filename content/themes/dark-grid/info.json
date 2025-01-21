@@ -1,0 +1,12 @@
+{
+	"name": "Dark Grid",
+	"version": "1.2.1",
+	"author": "CloudArcade",
+	"description": "Dark Grid Theme",
+	"website": "https://cloudarcade.net",
+	"release_date": "05/04/2024",
+	"changelog": "Fix bugs",
+	"type":"theme",
+	"html": "",
+	"target_version": "1.8.4"
+}

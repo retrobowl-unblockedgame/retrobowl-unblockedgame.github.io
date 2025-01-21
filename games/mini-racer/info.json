@@ -1,0 +1,11 @@
+{
+    "title" : "Mini Racer",
+    "slug" : "mini-racer",
+    "version" : 1,
+    "last_update" : "19/01/2024",
+    "developer" : "Gimcraft",
+    "description" : "Rediscover the thrill of classic car games with 'Mini Racer,' an endlessly entertaining game that's all about dodging, weaving, and racing to the top score. Maneuver your car left or right to avoid obstacles, dodge other vehicles, and watch out for treacherous oil spills that can send you spinning!",
+    "instructions" : "Hold the left side of the screen to move the ship to the left, and the right side to move it to the right. Alternatively, use the left and right arrow keys for control.",
+    "category" : "Arcade",
+    "tags" : "car, arcade, speed"
+}
