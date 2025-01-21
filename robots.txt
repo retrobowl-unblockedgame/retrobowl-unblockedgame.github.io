@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /data/
+Disallow: /games/
+Disallow: /content/
+Disallow: /js/
+
+# Block AI Crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Sitemap
+Sitemap: https://retrobowl-unblockedgame.github.io/sitemap.xml
